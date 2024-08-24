@@ -1,16 +1,38 @@
-<!DOCTYPE html>
-
 <html>
+	<head>
+		<title>form</title>
+	</head>
+	<body>
+		<form action=""method="get">
+			<input type="Text" id="name" placeholder="Name">
+			<br>
+			<input type="Email" id="email" placeholder="Email">
+			<br>
+			<label>Gender:</label>
+			<input type="radio" id="gender_f" name="gender"/>Female
+			<input type="radio" id="gender_m" name="gender"/>male
+			<br>
+			<label for="car_brands">Car Brands:</label>
+        <select id="car_brands" name="car_brands" required>
+			<option value="">--Please choose an option--</option>
+		</select>
+			<br>
+			<label for="äge">age</label>
+			<input type="Number" id="age" placeholder="Age">
+			<br>
+			<label for="phone_number">Phone Number:</label>
+        <input type="Tel" id="tel" placeholder="xxx-xxx-xxxxr">
+			<br>
+			<label for="password">Password:</label>
+        <input type="Password" id="password" placeholder="Password">
+        <br>
+			<label>
+            <input type="checkbox"id="tos" required>
+            I agree to the TOS
+        </label>
+        <br>
 
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
-</body>
-
+        <button type="submit">Submit</button>
+		</form>
+	</body>
 </html>
